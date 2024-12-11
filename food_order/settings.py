@@ -6,7 +6,7 @@ SECRET_KEY = 'django-insecure-hk08yym1xy$ilf0gh8^jfb4p3lbz!326y41&t)b_lh^v-+5kh!
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '192.168.20.172', '0.0.0.0']
+ALLOWED_HOSTS = ['127.0.0.1', '192.168.20.172', '0.0.0.0','food-order-1gunicorn.onrender.com']
 
 
 
