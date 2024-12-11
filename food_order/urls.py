@@ -1,8 +1,6 @@
-from . import views  # Ensure this import is correct
-from django.http import HttpResponse
-from django.urls import path, include
 from django.contrib import admin
-from django.http import JsonResponse
+from django.urls import path, include
+from . import views
 
 # Example data to be displayed at the root URL
 def home(request):
@@ -15,10 +13,8 @@ def home(request):
     }
     return JsonResponse(data)
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('api.urls')),
+    path('api/', include('api.urls')),  # Include all URLs from api.urls
     path('', home, name='home'),  # Root URL
-    path('api/food-items/', include('api.urls')),  # API paths
 ]
