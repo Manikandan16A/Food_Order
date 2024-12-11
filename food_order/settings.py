@@ -56,14 +56,18 @@ WSGI_APPLICATION = 'food_order.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'food_order_db',
-        'USER': 'root',
-        'PASSWORD': 'jonashjonash',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.mysql',  # MySQL engine
+        'NAME': 'food_order_db',              # Your database name
+        'USER': 'root',                       # Your database username
+        'PASSWORD': 'jonashjonash',           # Your database password
+        'HOST': '127.0.0.1',                  # Use 127.0.0.1 instead of localhost for better compatibility
+        'PORT': '3306',                       # Default MySQL port
+        'OPTIONS': {
+            'sql_mode': 'STRICT_TRANS_TABLES',  # Ensures strict mode for data integrity
+        },
     }
 }
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
