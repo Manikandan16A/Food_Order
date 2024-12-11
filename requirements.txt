@@ -74,6 +74,7 @@ PyMsgBox==1.0.9
 pyOpenSSL==24.2.1
 pyperclip==1.9.0
 pyphen==0.16.0
+pypiwin32==223
 PyRect==0.2.0
 PyScreeze==1.0.1
 python-dateutil==2.9.0.post0
@@ -83,7 +84,7 @@ python3-openid==3.2.0
 pyttsx3==2.98
 pytweening==1.2.0
 pytz==2024.2
-pywin32==304
+pywin32==308
 PyYAML==6.0.2
 regex==2024.9.11
 reportlab==4.2.5
