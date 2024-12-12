@@ -1,0 +1,14 @@
+services:
+  - name: my-python-service
+    type: web
+    env: python
+    build:
+      runtime: python3.9
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python manage.py runserver
+    envVars:
+      - key: SECRET_KEY
+        value: 'django-insecure-hk08yym1xy$ilf0gh8^jfb4p3lbz!326y41&t)b_lh^v-+5kh!'
+      - key: DEBUG
+        value: 'True'  # Set to 'False' in production
